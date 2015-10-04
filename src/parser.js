@@ -4,11 +4,8 @@ var blacklist = [
 	'.DS_Store'
 ];
 var emails = [
-	'(\w+).(\w+).edu', // example@example.edu
-	'(\w+).(\w+).(\w+).edu' // example@example.example.edu
-];
-var phones = [
-	'(\d)-(\d)-(\d)' // ###-###-####
+	/\w+@\w+.edu/, // example@example.com
+	/\w+@\w+.\w+.edu/ // example@example.example.com
 ];
 
 module.exports = {
@@ -39,7 +36,7 @@ module.exports = {
 
 					console.log("Read File: ", file, typeof(contents));
 					emails.forEach(function (regex) {
-						var matches = (contents.toString()).match(regex);
+						var matches = contents.match(regex);
 						console.log("Matching: ", regex, matches);
 					})
 				}
