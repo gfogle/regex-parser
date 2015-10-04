@@ -1,0 +1,33 @@
+{
+  "name": "regex-parser",
+  "version": "1.0.0",
+  "description": "Regex Parser to find emails, phone numbers, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gfogle/regex-parser.git"
+  },
+  "keywords": [
+    "regex",
+    "parser",
+    "email",
+    "phone",
+    "number"
+  ],
+  "author": "George Fogle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gfogle/regex-parser/issues"
+  },
+  "homepage": "https://github.com/gfogle/regex-parser",
+  "devDependencies": {
+    "mocha": "^2.3.3",
+    "should": "^7.1.0"
+  },
+  "dependencies": {
+    "regex": "^0.1.1"
+  }
+}
